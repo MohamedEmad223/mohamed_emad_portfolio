@@ -4,6 +4,7 @@ import {
   MessageCircle, ChevronDown, Code2, Database,
   Layers, Wrench, GraduationCap, Briefcase, Smartphone, ArrowUp, Globe
 } from "lucide-react";
+import profileImg from "./assets/profile.jpeg";
 /* ─── PALETTE ─── */
 const P = {
   bg: "#0a0e17", surface: "#111827", card: "#1a2235", cardHover: "#1f2a42",
@@ -355,10 +356,26 @@ export default function Portfolio() {
           </div>
           <div style={{ position: "relative", zIndex: 1 }}>
             <div style={{
-              width: 120, height: 120, borderRadius: "50%", margin: "0 auto 24px",
-              background: P.grad, display: "flex", alignItems: "center", justifyContent: "center",
-              fontSize: 44, fontWeight: 900, color: P.bg, boxShadow: `0 0 60px ${P.accentGlow}`,
-            }}>{isAr ? "م" : "M"}</div>
+              width: 176, height: 176, borderRadius: "50%", margin: "0 auto 28px",
+              padding: 4, background: P.grad, boxShadow: `0 0 60px ${P.accentGlow}`,
+              animation: "float 6s ease-in-out infinite",
+            }}>
+              <img
+                src={profileImg}
+                alt={L.heroTitle}
+                onError={e => { e.currentTarget.style.display = "none"; e.currentTarget.nextSibling.style.display = "flex"; }}
+                style={{
+                  width: "100%", height: "100%", borderRadius: "50%", display: "block",
+                  objectFit: "cover", objectPosition: "center 20%",
+                  border: `4px solid ${P.bg}`, background: P.surface,
+                }}
+              />
+              <div style={{
+                display: "none", width: "100%", height: "100%", borderRadius: "50%",
+                background: P.surface, alignItems: "center", justifyContent: "center",
+                fontSize: 60, fontWeight: 900, color: P.accent, border: `4px solid ${P.bg}`,
+              }}>{isAr ? "م" : "M"}</div>
+            </div>
             <h1 style={{ fontSize: "clamp(2rem, 6vw, 3.2rem)", fontWeight: 900, marginBottom: 8 }}>{L.heroTitle}</h1>
             <p style={{ fontSize: "clamp(1rem, 3vw, 1.35rem)", fontWeight: 300, background: P.grad, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", marginBottom: 12 }}>{L.heroSub}</p>
             <p style={{ color: P.muted, fontSize: 15, display: "flex", alignItems: "center", justifyContent: "center", gap: 6 }}><MapPin size={15} /> {L.heroLoc}</p>
