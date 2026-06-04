@@ -13,8 +13,7 @@ import { Contact } from "./components/Contact.jsx";
 import { Footer } from "./components/Footer.jsx";
 import { ScrollToTop } from "./components/ScrollToTop.jsx";
 
-/* Global styles that can't be inlined (font import, keyframes, scrollbar, and
- * the mobile-nav media query). The `.desk-nav` / `.mob-btn` classes toggle here. */
+
 const GLOBAL_CSS = `
   @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap');
   *{margin:0;padding:0;box-sizing:border-box}
@@ -46,7 +45,6 @@ export default function Portfolio() {
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, "_blank", "noopener,noreferrer");
   };
 
-  // Scrollspy for the active nav link + visibility of the scroll-to-top button.
   useEffect(() => {
     const onScroll = () => {
       setShowTop(window.scrollY > 400);
