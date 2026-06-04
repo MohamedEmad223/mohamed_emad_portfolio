@@ -1,8 +1,8 @@
 import { ExternalLink, ShoppingBag, HeartPulse, Wallet, Brain, Globe, Dumbbell, Play } from "lucide-react";
 import { P } from "../theme.js";
 import { projColors } from "../data/content.js";
-import { Github } from "./icons.jsx";
 import { Section, STitle } from "./ui.jsx";
+import healVideo from "../assets/videos/heal_care.mp4";
 import cottonVideo from "../assets/videos/cotton_cloud.mp4";
 import spaceVideo from "../assets/videos/space.mp4";
 import nourishVideo from "../assets/videos/Nourish.mp4";
@@ -12,7 +12,7 @@ import hackVideo from "../assets/videos/hack_talk.mp4";
 const TYPE_ICONS = { shop: ShoppingBag, health: HeartPulse, fin: Wallet, ai: Brain, info: Globe, wellness: Dumbbell };
 
 /* Demo video per project, index-coupled with L.projects; null = no preview. */
-const projVideos = [null, null, cottonVideo, spaceVideo, nourishVideo, hackVideo];
+const projVideos = [healVideo, null, cottonVideo, spaceVideo, nourishVideo, hackVideo];
 
 /* Projects section: the domains I work in, then the project cards with hover-to-play previews. */
 export function Projects({ L, isAr }) {
@@ -42,10 +42,12 @@ export function Projects({ L, isAr }) {
         {L.projects.map((p, i) => {
           const video = projVideos[i];
           return (
-            <div key={i} style={{
+            <div key={i}
+              onClick={() => { if (video) window.open(video, "_blank", "noopener,noreferrer"); }}
+              style={{
               background: P.card, borderRadius: 16, padding: 28,
               border: `1px solid ${P.border}`, position: "relative", overflow: "hidden",
-              transition: "transform .3s, box-shadow .3s", cursor: "default",
+              transition: "transform .3s, box-shadow .3s", cursor: video ? "pointer" : "default",
             }}
               onMouseEnter={e => {
                 e.currentTarget.style.transform = "translateY(-4px)";
@@ -91,14 +93,13 @@ export function Projects({ L, isAr }) {
                 <h3 style={{ fontSize: 18, fontWeight: 700 }}>{p.name}</h3>
               </div>
               <p style={{ fontSize: 14, color: P.muted, lineHeight: 1.8 }}>{p.desc}</p>
-              <div style={{ marginTop: 16, display: "flex", gap: 8 }}>
-                <a href="#" style={{ fontSize: 13, color: projColors[i], display: "flex", alignItems: "center", gap: 4, textDecoration: "none" }}>
-                  <ExternalLink size={13} /> {L.viewProj}
-                </a>
-                <a href="#" style={{ fontSize: 13, color: P.muted, display: "flex", alignItems: "center", gap: 4, textDecoration: "none" }}>
-                  <Github size={13} /> GitHub
-                </a>
-              </div>
+              {video && (
+                <div style={{ marginTop: 16, display: "flex", gap: 8 }}>
+                  <a href={video} target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()} style={{ fontSize: 13, color: projColors[i], display: "flex", alignItems: "center", gap: 4, textDecoration: "none" }}>
+                    <ExternalLink size={13} /> {L.viewProj}
+                  </a>
+                </div>
+              )}
             </div>
           );
         })}
