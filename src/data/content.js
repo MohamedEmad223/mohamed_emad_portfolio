@@ -1,7 +1,7 @@
 export const t = {
   ar: {
     dir: "rtl",
-    nav: ["الرئيسية", "نبذة عني", "الخبرات", "المشاريع", "المتاجر", "المهارات", "تواصل"],
+    nav: ["الرئيسية", "نبذة عني", "الخبرات", "المتاجر", "المشاريع", "المهارات", "تواصل"],
     heroTitle: "محمد عماد",
     heroSub: "مطور Flutter",
     heroLoc: "المنصورة، مصر",
@@ -63,7 +63,7 @@ export const t = {
   },
   en: {
     dir: "ltr",
-    nav: ["Home", "About", "Experience", "Projects", "Store", "Skills", "Contact"],
+    nav: ["Home", "About", "Experience", "Store", "Projects", "Skills", "Contact"],
     heroTitle: "Mohamed Emad",
     heroSub: "Flutter Developer",
     heroLoc: "Mansoura, Egypt",
@@ -131,7 +131,7 @@ export const t = {
  *   storePlatforms ↔ L.storeApps (which store badges to show)
  *   storeLinks     ↔ L.storeApps (store URLs per badge)
  */
-export const sectionIds = ["hero", "about", "experience", "projects", "store-apps", "skills", "contact"];
+export const sectionIds = ["hero", "about", "experience", "store-apps", "projects", "skills", "contact"];
 export const projColors = ["#38bdf8", "#a78bfa", "#34d399", "#f472b6", "#fbbf24", "#fb923c"];
 export const storePlatforms = [["google", "apple"], ["google"], ["google", "apple"]];
 export const storeLinks = [

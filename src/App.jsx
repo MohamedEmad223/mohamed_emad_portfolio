@@ -80,8 +80,8 @@ export default function Portfolio() {
         <Hero L={L} isAr={isAr} onContact={() => go("contact")} />
         <About L={L} />
         <Experience L={L} isAr={isAr} />
-        <Projects L={L} isAr={isAr} />
         <StoreApps L={L} />
+        <Projects L={L} isAr={isAr} />
         <Skills L={L} />
         <Contact L={L} formData={formData} onFormChange={onFormChange} onSubmit={sendWhatsApp} />
       </div>
