@@ -12,7 +12,8 @@ export function Hero({ L, isAr, onContact }) {
       </div>
       <div style={{ position: "relative", zIndex: 1 }}>
         <div style={{
-          width: 176, height: 176, borderRadius: "50%", margin: "0 auto 28px",
+          width: "clamp(176px, 22vw, 280px)", height: "clamp(176px, 22vw, 280px)",
+          borderRadius: "50%", margin: "0 auto 28px",
           padding: 4, background: P.grad, boxShadow: `0 0 60px ${P.accentGlow}`,
           animation: "float 6s ease-in-out infinite",
         }}>

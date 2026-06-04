@@ -43,7 +43,6 @@ export const t = {
     storeApps: [
       { name: "REVU", desc: "REVU هي المنصة المثالية حيث تصنع الآراء الصادقة قرارات شراء أذكى. سواء كنت تستكشف منتجات العناية بالبشرة أو الأجهزة التقنية أو الأساسيات اليومية، يتيح لك REVU مشاركة تجربتك ومساعدة الآخرين على اتخاذ قرارات مدروسة." },
       { name: "Ghanem Pharmacy", desc: "تطبيق تجارة إلكترونية للصيدليات لشراء أدويتك، مع المفضلة، شات، وضع الضيف، حساب شخصي، محفظة، استرجاع نقدي (كاش باك)، الوضع الليلي (الثيم الداكن)، وحفظ عنوانك لتوصيل الطلبات إليك." },
-      { name: "التطبيق الثالث", desc: "وصف قصير للتطبيق المنشور على المتاجر" },
     ],
     skillsTitle: "المهارات",
     contactTitle: "تواصل معي",
@@ -105,7 +104,6 @@ export const t = {
     storeApps: [
       { name: "REVU", desc: "REVU is the ultimate platform where honest opinions shape smarter purchases. Whether you're exploring skincare, tech gadgets, or daily essentials, REVU lets you share your experience and help others make informed decisions." },
       { name: "Ghanem Pharmacy", desc: "An e-commerce app for pharmacies to buy your medicines, with favorites, chat, guest mode, profile, wallet, cash back, dark theme, and saving your address so orders get delivered to you." },
-      { name: "App Three", desc: "Short description of the published app" },
     ],
     skillsTitle: "Skills",
     contactTitle: "Contact Me",
@@ -133,7 +131,7 @@ export const t = {
  */
 export const sectionIds = ["hero", "about", "experience", "store-apps", "projects", "skills", "contact"];
 export const projColors = ["#38bdf8", "#a78bfa", "#34d399", "#f472b6", "#fbbf24", "#fb923c"];
-export const storePlatforms = [["google", "apple"], ["google"], ["google", "apple"]];
+export const storePlatforms = [["google", "apple"], ["google"]];
 export const storeLinks = [
   {
     google: "https://play.google.com/store/apps/details?id=com.ics.elgamal.revu.revu",
@@ -142,7 +140,6 @@ export const storeLinks = [
   {
     google: "https://play.google.com/store/apps/details?id=com.ghanempharmacy.app",
   },
-  {},
 ];
 
 /* `icon` keys map to lucide icons in <SkillIcon> (see components/Skills.jsx). */
