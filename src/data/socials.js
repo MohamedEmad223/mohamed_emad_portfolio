@@ -1,7 +1,3 @@
-/* ─── SOCIAL LINKS ───
- * Each entry's `Icon` is a component (lucide or a custom brand SVG) rendered
- * as <s.Icon size={...} /> in the footer.
- */
 import { MessageCircle } from "lucide-react";
 import { Linkedin, Github, Facebook, Instagram, XIcon } from "../components/icons.jsx";
 import { WHATSAPP_NUMBER } from "../config.js";

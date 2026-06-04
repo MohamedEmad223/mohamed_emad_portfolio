@@ -1,10 +1,3 @@
-/* ─── CONTENT ───
- * All page copy lives here as data, not markup. To change what the site says,
- * edit these structures — the JSX just maps over them.
- *
- * `t` holds parallel `ar` and `en` trees with IDENTICAL shapes. Keep array
- * lengths aligned across both languages; index-based lookups depend on it.
- */
 export const t = {
   ar: {
     dir: "rtl",
