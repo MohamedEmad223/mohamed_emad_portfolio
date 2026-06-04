@@ -35,19 +35,27 @@ export const Instagram = ({ size = 20 }) => (
 );
 
 export const GooglePlayBadge = () => (
-  <svg viewBox="0 0 135 40" width={120} height={36}>
-    <rect width="135" height="40" rx="5" fill="#000" />
-    <text x="67" y="12" textAnchor="middle" fill="#fff" fontSize="7" fontFamily="sans-serif">GET IT ON</text>
-    <text x="67" y="28" textAnchor="middle" fill="#fff" fontSize="12" fontWeight="bold" fontFamily="sans-serif">Google Play</text>
-    <path d="M20 8l12 12-12 12V8z" fill="#38bdf8" opacity="0.8" />
+  <svg viewBox="0 0 135 40" width={135} height={40} role="img" aria-label="Get it on Google Play">
+    <rect x="0.5" y="0.5" width="134" height="39" rx="6" fill="#000" stroke="#A6A6A6" />
+    {/* Official multicolor Google Play mark */}
+    <g transform="translate(11,8) scale(0.047)">
+      <path fill="#00D4FF" d="M48 24.6C42.4 30.4 39.1 39.6 39.1 51.4v409.2c0 11.8 3.3 21 8.9 26.8l1.4 1.3 229.2-229.2v-5.4L49.4 23.3z" />
+      <path fill="#FFD600" d="M355.5 333.4 279 256.9v-5.4l76.5-76.5 1.7 1 90.7 51.5c25.9 14.7 25.9 38.8 0 53.6l-90.6 51.3z" />
+      <path fill="#FF3A44" d="M357.2 332.4 279 254.2 48 485.2c8.6 9 22.6 10.1 34.5 1.3z" />
+      <path fill="#00E676" d="M357.2 179.6 82.5 25.5C70.6 16.7 56.6 17.8 48 26.8l231 231z" />
+    </g>
+    <text x="44" y="16" fill="#fff" fontSize="6.5" letterSpacing="0.5" fontFamily="'Roboto','Helvetica Neue',Arial,sans-serif">GET IT ON</text>
+    <text x="43" y="31" fill="#fff" fontSize="15" fontWeight="500" fontFamily="'Roboto','Helvetica Neue',Arial,sans-serif">Google Play</text>
   </svg>
 );
 
 export const AppStoreBadge = () => (
-  <svg viewBox="0 0 135 40" width={120} height={36}>
-    <rect width="135" height="40" rx="5" fill="#000" />
-    <text x="67" y="12" textAnchor="middle" fill="#fff" fontSize="7" fontFamily="sans-serif">Download on the</text>
-    <text x="67" y="28" textAnchor="middle" fill="#fff" fontSize="12" fontWeight="bold" fontFamily="sans-serif">App Store</text>
-    <path d="M22 12a8 8 0 0 1 0 16" fill="none" stroke="#38bdf8" strokeWidth="2" opacity="0.8" />
+  <svg viewBox="0 0 135 40" width={135} height={40} role="img" aria-label="Download on the App Store">
+    <rect x="0.5" y="0.5" width="134" height="39" rx="6" fill="#000" stroke="#A6A6A6" />
+    {/* Apple logo */}
+    <path fill="#fff" transform="translate(10,9) scale(0.92)"
+      d="M16.365 1.43c0 1.14-.493 2.27-1.177 3.08-.744.9-1.99 1.57-2.987 1.57-.12 0-.23-.02-.3-.03-.01-.06-.04-.22-.04-.39 0-1.15.572-2.27 1.206-2.98.804-.94 2.142-1.64 3.248-1.68.03.13.05.28.05.43zm4.565 15.71c-.03.07-.463 1.58-1.518 3.12-.945 1.34-1.94 2.71-3.43 2.71-1.517 0-1.9-.88-3.63-.88-1.698 0-2.302.91-3.67.91-1.377 0-2.332-1.26-3.428-2.8-1.287-1.82-2.323-4.63-2.323-7.28 0-4.28 2.797-6.55 5.552-6.55 1.448 0 2.675.95 3.6.95.865 0 2.222-1.01 3.902-1.01.613 0 2.886.06 4.374 2.19-.13.09-2.383 1.37-2.383 4.19 0 3.26 2.854 4.42 2.955 4.45z" />
+    <text x="40" y="16" fill="#fff" fontSize="6.5" fontFamily="'Helvetica Neue',Arial,sans-serif">Download on the</text>
+    <text x="39" y="31" fill="#fff" fontSize="16" fontWeight="500" fontFamily="'Helvetica Neue',Arial,sans-serif">App Store</text>
   </svg>
 );
