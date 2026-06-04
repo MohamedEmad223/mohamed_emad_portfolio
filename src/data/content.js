@@ -21,6 +21,15 @@ export const t = {
       { title: "Flutter Developer", company: "CCIC المنصورة", date: "يونيو 2023 – أكتوبر 2023", loc: "عن بعد", desc: "تدريب Flutter" },
     ],
     projTitle: "المشاريع",
+    projTypesTitle: "أنواع المشاريع التي أعمل عليها",
+    projTypes: [
+      { icon: "shop", name: "التجارة الإلكترونية" },
+      { icon: "health", name: "الرعاية الصحية" },
+      { icon: "fin", name: "التكنولوجيا المالية" },
+      { icon: "ai", name: "الذكاء الاصطناعي" },
+      { icon: "info", name: "تطبيقات معلوماتية" },
+      { icon: "wellness", name: "الصحة واللياقة" },
+    ],
     projects: [
       { name: "HealCare", desc: "تطبيق دكتور ومريض فيه حجز مواعيد، شات لحظي، دفع، إشعارات، تقييمات، رفع ملفات طبية، وإدارة جدول الدكتور" },
       { name: "FinTech", desc: "تطبيق تتبع أسعار العملات الرقمية مع بصمة وتعرف على الوجه، رسوم بيانية يومية، دفع بـ Stripe" },
@@ -74,6 +83,15 @@ export const t = {
       { title: "Flutter Developer", company: "CCIC Mansoura", date: "Jun 2023 – Oct 2023", loc: "Remote", desc: "Flutter training program" },
     ],
     projTitle: "Projects",
+    projTypesTitle: "Types of Projects I Work On",
+    projTypes: [
+      { icon: "shop", name: "E-Commerce" },
+      { icon: "health", name: "Healthcare" },
+      { icon: "fin", name: "FinTech" },
+      { icon: "ai", name: "AI & Innovation" },
+      { icon: "info", name: "Informational" },
+      { icon: "wellness", name: "Health & Wellness" },
+    ],
     projects: [
       { name: "HealCare", desc: "Doctor-patient app with appointment booking, real-time chat, payments, notifications, ratings, medical file uploads, and doctor schedule management" },
       { name: "FinTech", desc: "Crypto price tracker with biometric auth, daily price graphs, Stripe payment, profile & theme customization" },
