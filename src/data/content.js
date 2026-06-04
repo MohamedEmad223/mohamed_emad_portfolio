@@ -42,7 +42,7 @@ export const t = {
     storeSub: "تطبيقات حقيقية منشورة على Google Play و App Store",
     storeApps: [
       { name: "REVU", desc: "REVU هي المنصة المثالية حيث تصنع الآراء الصادقة قرارات شراء أذكى. سواء كنت تستكشف منتجات العناية بالبشرة أو الأجهزة التقنية أو الأساسيات اليومية، يتيح لك REVU مشاركة تجربتك ومساعدة الآخرين على اتخاذ قرارات مدروسة." },
-      { name: "التطبيق الثاني", desc: "وصف قصير للتطبيق المنشور على المتاجر" },
+      { name: "Ghanem Pharmacy", desc: "تطبيق تجارة إلكترونية للصيدليات لشراء أدويتك، مع المفضلة، شات، وضع الضيف، حساب شخصي، محفظة، واسترجاع نقدي (كاش باك)." },
       { name: "التطبيق الثالث", desc: "وصف قصير للتطبيق المنشور على المتاجر" },
     ],
     skillsTitle: "المهارات",
@@ -104,7 +104,7 @@ export const t = {
     storeSub: "Real published apps on Google Play & App Store",
     storeApps: [
       { name: "REVU", desc: "REVU is the ultimate platform where honest opinions shape smarter purchases. Whether you're exploring skincare, tech gadgets, or daily essentials, REVU lets you share your experience and help others make informed decisions." },
-      { name: "App Two", desc: "Short description of the published app" },
+      { name: "Ghanem Pharmacy", desc: "An e-commerce app for pharmacies to buy your medicines, with favorites, chat, guest mode, profile, wallet, and cash back." },
       { name: "App Three", desc: "Short description of the published app" },
     ],
     skillsTitle: "Skills",
@@ -139,7 +139,9 @@ export const storeLinks = [
     google: "https://play.google.com/store/apps/details?id=com.ics.elgamal.revu.revu",
     apple: "https://apps.apple.com/us/app/revu-app/id6771404570",
   },
-  {},
+  {
+    google: "https://play.google.com/store/apps/details?id=com.ghanempharmacy.app",
+  },
   {},
 ];
 
