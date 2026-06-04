@@ -18,7 +18,8 @@ export function Contact({ L, formData, onFormChange, onSubmit }) {
           <a key={i} href={i === 0 ? `mailto:${L.contactVals[0]}` : i === 1 ? `tel:${L.contactVals[1]}` : "#"} style={{
             background: P.card, borderRadius: 16, padding: "24px 32px",
             border: `1px solid ${P.border}`, textDecoration: "none", color: "inherit",
-            display: "flex", alignItems: "center", gap: 14, minWidth: 260, transition: "border-color .3s, transform .3s",
+            display: "flex", alignItems: "center", gap: 14, width: 300, maxWidth: "100%",
+            boxSizing: "border-box", transition: "border-color .3s, transform .3s",
           }}
             onMouseEnter={e => { e.currentTarget.style.borderColor = P.accent; e.currentTarget.style.transform = "translateY(-2px)"; }}
             onMouseLeave={e => { e.currentTarget.style.borderColor = P.border; e.currentTarget.style.transform = ""; }}
@@ -26,9 +27,9 @@ export function Contact({ L, formData, onFormChange, onSubmit }) {
             <div style={{ width: 44, height: 44, borderRadius: 12, background: P.accentSoft, display: "flex", alignItems: "center", justifyContent: "center", color: P.accent }}>
               <Icon size={20} />
             </div>
-            <div>
+            <div style={{ minWidth: 0 }}>
               <div style={{ fontSize: 12, color: P.muted }}>{L.contactLabels[i]}</div>
-              <div style={{ fontSize: 14, fontWeight: 600, direction: "ltr" }}>{L.contactVals[i]}</div>
+              <div style={{ fontSize: 14, fontWeight: 600, direction: "ltr", wordBreak: "break-word" }}>{L.contactVals[i]}</div>
             </div>
           </a>
         ))}

@@ -32,7 +32,7 @@ export const t = {
     storeTitle: "تطبيقاتي على المتاجر",
     storeSub: "تطبيقات حقيقية منشورة على Google Play و App Store",
     storeApps: [
-      { name: "التطبيق الأول", desc: "وصف قصير للتطبيق المنشور على المتاجر" },
+      { name: "REVU", desc: "REVU هي المنصة المثالية حيث تصنع الآراء الصادقة قرارات شراء أذكى. سواء كنت تستكشف منتجات العناية بالبشرة أو الأجهزة التقنية أو الأساسيات اليومية، يتيح لك REVU مشاركة تجربتك ومساعدة الآخرين على اتخاذ قرارات مدروسة." },
       { name: "التطبيق الثاني", desc: "وصف قصير للتطبيق المنشور على المتاجر" },
       { name: "التطبيق الثالث", desc: "وصف قصير للتطبيق المنشور على المتاجر" },
     ],
@@ -85,7 +85,7 @@ export const t = {
     storeTitle: "My Apps on Stores",
     storeSub: "Real published apps on Google Play & App Store",
     storeApps: [
-      { name: "App One", desc: "Short description of the published app" },
+      { name: "REVU", desc: "REVU is the ultimate platform where honest opinions shape smarter purchases. Whether you're exploring skincare, tech gadgets, or daily essentials, REVU lets you share your experience and help others make informed decisions." },
       { name: "App Two", desc: "Short description of the published app" },
       { name: "App Three", desc: "Short description of the published app" },
     ],
@@ -111,10 +111,19 @@ export const t = {
  *   sectionIds   ↔ L.nav        (nav buttons / scroll targets)
  *   projColors   ↔ L.projects   (accent color per project card)
  *   storePlatforms ↔ L.storeApps (which store badges to show)
+ *   storeLinks     ↔ L.storeApps (store URLs per badge)
  */
 export const sectionIds = ["hero", "about", "experience", "projects", "store-apps", "skills", "contact"];
 export const projColors = ["#38bdf8", "#a78bfa", "#34d399", "#f472b6", "#fbbf24", "#fb923c"];
 export const storePlatforms = [["google", "apple"], ["google"], ["google", "apple"]];
+export const storeLinks = [
+  {
+    google: "https://play.google.com/store/apps/details?id=com.ics.elgamal.revu.revu",
+    apple: "https://apps.apple.com/us/app/revu-app/id6771404570",
+  },
+  {},
+  {},
+];
 
 /* `icon` keys map to lucide icons in <SkillIcon> (see components/Skills.jsx). */
 export const skillGroups = [
