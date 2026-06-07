@@ -1,6 +1,7 @@
 import { MapPin, Download, ChevronDown } from "lucide-react";
 import { P } from "../theme.js";
 import profileImg from "../assets/profile.jpeg";
+import cvFile from "../assets/files/Mohamed_Emad_Flutter_Developer.pdf";
 
 /* Landing section: avatar, name, tagline, and primary CTAs. */
 export function Hero({ L, isAr, onContact }) {
@@ -43,7 +44,7 @@ export function Hero({ L, isAr, onContact }) {
             fontWeight: 700, fontSize: 15, textDecoration: "none", fontFamily: "inherit",
             boxShadow: `0 4px 24px ${P.accentGlow}`,
           }}>{L.ctaContact}</a>
-          <a href="#" style={{
+          <a href={cvFile} download="Mohamed_Emad_Flutter_Developer.pdf" style={{
             border: `1.5px solid ${P.accent}`, color: P.accent, padding: "12px 28px",
             borderRadius: 10, fontWeight: 600, fontSize: 15, textDecoration: "none", fontFamily: "inherit",
             display: "flex", alignItems: "center", gap: 8,
