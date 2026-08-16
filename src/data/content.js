@@ -12,7 +12,7 @@ export const t = {
     edu: "بكالوريوس علوم الحاسب — جامعة المنصورة (2020–2024)",
     expTitle: "الخبرة العملية",
     experiences: [
-      { title: "Flutter Developer", company: "ICS For Digital Solution", date: "يناير 2026 – الحالي", loc: "عن بعد", desc: "تطبيقات E-commerce ومشاريع لمستشفيات وصيدليات" },
+      { title: "Flutter Developer", company: "ICS For Digital Solution", date: "يناير 2026 – الحالي", loc: "الشيخ زايد (عن بعد)", desc: "تطبيقات E-commerce ومشاريع لمستشفيات وصيدليات" },
       { title: "Flutter Developer", company: "Teqnit Almalomat", date: "أغسطس 2025 – ديسمبر 2025", loc: "المنصورة", desc: "تطبيقين عن السياحة" },
       { title: "Mentorship", company: "Omar Ahmed — Senior Flutter Engineer", date: "سبتمبر 2025 – ديسمبر 2025", loc: "عن بعد", desc: "10 أسابيع تدريب مكثف على Flutter المتقدم وهندسة البرمجيات" },
       { title: "تدريب", company: "تطبيق Lothgha", date: "أغسطس 2024 – سبتمبر 2024", loc: "عن بعد", desc: "تطبيق تابلت للأطفال — مطابقة الأشكال والظلال" },
@@ -43,6 +43,8 @@ export const t = {
     storeApps: [
       { name: "REVU", desc: "REVU هي المنصة المثالية حيث تصنع الآراء الصادقة قرارات شراء أذكى. سواء كنت تستكشف منتجات العناية بالبشرة أو الأجهزة التقنية أو الأساسيات اليومية، يتيح لك REVU مشاركة تجربتك ومساعدة الآخرين على اتخاذ قرارات مدروسة." },
       { name: "Ghanem Pharmacy", desc: "تطبيق تجارة إلكترونية للصيدليات لشراء أدويتك، مع المفضلة، شات، وضع الضيف، حساب شخصي، محفظة، استرجاع نقدي (كاش باك)، الوضع الليلي (الثيم الداكن)، وحفظ عنوانك لتوصيل الطلبات إليك." },
+      { name: "eBrokers", desc: "eBrokers تطبيق عقاري متكامل يتيح للمستخدمين البحث عن العقارات وإدارتها وشرائها وبيعها وتأجيرها بسهولة. يقدم التطبيق تجربة عصرية وسلسة لنشر الإعلانات، إدارة العقارات والمعاملات، والوصول إلى أدوات متكاملة من خلال واجهة سهلة الاستخدام." },
+      { name: "Shaghela Buyer", desc: "شغالة تطبيق لخدمات الصيانة المنزلية يربط المستخدمين بمقدمي خدمات مهرة، من السباكة والكهرباء إلى النجارة والدهانات وإصلاح الأجهزة. يوفر حجز فوري، خدمات فورية أو مجدولة، محترفين موثقين، دفع إلكتروني آمن، ودعم ثنائي اللغة لتجربة صيانة منزلية سهلة." },
     ],
     skillsTitle: "المهارات",
     contactTitle: "تواصل معي",
@@ -73,7 +75,7 @@ export const t = {
     edu: "B.Sc. in Computer Science — Mansoura University (2020–2024)",
     expTitle: "Work Experience",
     experiences: [
-      { title: "Flutter Developer", company: "ICS For Digital Solution", date: "Jan 2026 – Present", loc: "Remote", desc: "E-commerce apps and projects for hospitals and pharmacies" },
+      { title: "Flutter Developer", company: "ICS For Digital Solution", date: "Jan 2026 – Present", loc: "Sheikh Zayed (Remote)", desc: "E-commerce apps and projects for hospitals and pharmacies" },
       { title: "Flutter Developer", company: "Teqnit Almalomat", date: "Aug 2025 – Dec 2025", loc: "Mansoura", desc: "Two tourism information applications" },
       { title: "Mentorship", company: "Omar Ahmed — Senior Flutter Engineer", date: "Sep 2025 – Dec 2025", loc: "Remote", desc: "10-week intensive mentorship on advanced Flutter and software engineering" },
       { title: "Internship", company: "Lothgha App", date: "Aug 2024 – Sep 2024", loc: "Remote", desc: "Children's tablet app — Shape and Shadow Matching" },
@@ -104,6 +106,8 @@ export const t = {
     storeApps: [
       { name: "REVU", desc: "REVU is the ultimate platform where honest opinions shape smarter purchases. Whether you're exploring skincare, tech gadgets, or daily essentials, REVU lets you share your experience and help others make informed decisions." },
       { name: "Ghanem Pharmacy", desc: "An e-commerce app for pharmacies to buy your medicines, with favorites, chat, guest mode, profile, wallet, cash back, dark theme, and saving your address so orders get delivered to you." },
+      { name: "eBrokers", desc: "eBrokers is a comprehensive real estate application that enables users to easily search for, manage, buy, sell, and rent properties. It provides a modern and seamless experience for publishing listings, managing properties and transactions, and accessing integrated tools through a user-friendly interface." },
+      { name: "Shaghela Buyer", desc: "SHAGHELA is a handyman app connecting users with skilled service providers for home maintenance — plumbing, electrical work, carpentry, painting, and appliance repair. It offers instant booking, on-demand or scheduled services, verified professionals, secure cashless payments, and bilingual support." },
     ],
     skillsTitle: "Skills",
     contactTitle: "Contact Me",
@@ -131,7 +135,7 @@ export const t = {
  */
 export const sectionIds = ["hero", "about", "experience", "store-apps", "projects", "skills", "contact"];
 export const projColors = ["#38bdf8", "#a78bfa", "#34d399", "#f472b6", "#fbbf24", "#fb923c"];
-export const storePlatforms = [["google", "apple"], ["google"]];
+export const storePlatforms = [["google", "apple"], ["google"], ["google"], ["google", "apple"]];
 export const storeLinks = [
   {
     google: "https://play.google.com/store/apps/details?id=com.ics.elgamal.revu.revu",
@@ -139,6 +143,13 @@ export const storeLinks = [
   },
   {
     google: "https://play.google.com/store/apps/details?id=com.ghanempharmacy.app",
+  },
+  {
+    google: "https://play.google.com/store/apps/details?id=com.ics.group.ebrokers.app",
+  },
+  {
+    google: "https://play.google.com/store/apps/details?id=com.shagela.buyer.ics.elgamal",
+    apple: "https://apps.apple.com/us/app/shagela-buyer/id6781332524",
   },
 ];
 

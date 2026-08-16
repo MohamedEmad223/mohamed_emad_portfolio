@@ -5,13 +5,16 @@ import { GooglePlayBadge, AppStoreBadge } from "./icons.jsx";
 import { Section, STitle } from "./ui.jsx";
 import appOneImg from "../assets/app_one.png";
 import appTwoImg from "../assets/app_two.png";
+import eBrokersImg from "../assets/eBrokers.webp";
+import shaghelaImg from "../assets/shaghela.webp";
 
 /* Per-app icon image (index-coupled with L.storeApps); null falls back to a generic icon.
  * `fit`/`bg` let a wide logo (e.g. Ghanem) sit on white instead of being cropped like a square icon. */
 const appImages = [
   { src: appOneImg, fit: "cover", bg: P.accentSoft },
   { src: appTwoImg, fit: "contain", bg: "#fff" },
-  null,
+  { src: eBrokersImg, fit: "contain", bg: "#fff" },
+  { src: shaghelaImg, fit: "contain", bg: "#fff" },
 ];
 
 /* Published apps; `storePlatforms[i]` decides which store badges show. */
